@@ -1,4 +1,4 @@
-import { TopNav } from "@/components/nav";
+import { SideNav } from "@/components/nav";
 
 export default function DashboardLayout({
   children,
@@ -7,8 +7,10 @@ export default function DashboardLayout({
 }) {
   return (
     <>
-      <TopNav title="Dashboard" />
-      <main>{children}</main>
+      <div className="flex min-h-[100dvh]">
+        <SideNav />
+        <div className="flex-grow overflow-auto">{children}</div>
+      </div>
     </>
   );
 }
