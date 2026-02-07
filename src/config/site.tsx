@@ -18,9 +18,4 @@ export const navigations: Navigation[] = [
     name: "Dashboard",
     href: "/",
   },
-  {
-    icon: MessagesSquare,
-    name: "Ticket",
-    href: "/ticket",
-  },
 ];
